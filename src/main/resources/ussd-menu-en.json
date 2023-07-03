@@ -1,0 +1,170 @@
+{
+    "1": {
+        "id": 1,
+        "menu_level": 1,
+        "text": "Elizabeth Glaser - Attendance Control\n\nPlease, enter your PIN",
+        "menu_options": [
+            {
+                "type": "level",
+                "response": null,
+                "next_menu_level": 2,
+                "action": "PROCESS_LOGIN"
+            }
+        ],
+        "max_selections": 0
+    },
+    "2": {
+        "id": 2,
+        "menu_level": 2,
+        "text": "Elizabeth Glaser - Attendance Control\n\n1.Confirm Entry",
+        "menu_options": [
+            {
+                "type": "response",
+                "response": "Elizabeth Glaser - Attendance Control\n\nEntry registered: ${entry_date}\n\nDon't forget to register your exit!",
+                "next_menu_level": null,
+                "action": "PROCESS_ENTRY"
+            }
+        ],
+        "max_selections": 1
+    },
+    "3": {
+        "id": 3,
+        "menu_level": 3,
+        "text": "Elizabeth Glaser - Attendance Control\n\n1.Confirm Exit",
+        "menu_options": [
+            {
+                "type": "response",
+                "response": "Elizabeth Glaser - Attendance Control\n\nExit registered: ${exit_date}\n\nAttendance has been submitted for approval.",
+                "next_menu_level": null,
+                "action": "PROCESS_EXIT"
+            }
+        ],
+        "max_selections": 1
+    },
+    "4": {
+        "id": 4,
+        "menu_level": 4,
+        "text": "Elizabeth Glaser - Attendance Control\n\nIncorrect PIN!\n\n You have only left ${attempts} attempts",
+        "menu_options": [
+            {
+                "type": "level",
+                "response": null,
+                "next_menu_level": 2,
+                "action": "PROCESS_LOGIN"
+            }
+        ],
+        "max_selections": 0
+    },
+    "5": {
+        "id": 5,
+        "menu_level": 5,
+        "text": "",
+        "menu_options": [
+            {
+                "type": "response",
+                "response": "Elizabeth Glaser - Attendance Control\n\nMax Login attempts reached! Please, contact your supervisor",
+                "next_menu_level": null,
+                "action": "TERMINATE_SESSION"
+            }
+        ],
+        "max_selections": 0
+    },
+    "6": {
+        "id": 6,
+        "menu_level": 6,
+        "text": "",
+        "menu_options": [
+            {
+                "type": "response",
+                "response": "Elizabeth Glaser - Attendance Control\n\nSorry, you dont have access to this service.\nPlease, contact your supervisor",
+                "next_menu_level": null,
+                "action": "TERMINATE_SESSION"
+            }
+        ],
+        "max_selections": 0
+    },
+    "7": {
+        "id": 7,
+        "menu_level": 7,
+        "text": "",
+        "menu_options": [
+            {
+                "type": "response",
+                "response": "Elizabeth Glaser - Attendance Control\n\nAn error occurred while performing operation!",
+                "next_menu_level": null,
+                "action": "TERMINATE_SESSION"
+            }
+        ],
+        "max_selections": 0
+    },
+    "8": {
+        "id": 8,
+        "menu_level": 8,
+        "text": "",
+        "menu_options": [
+            {
+                "type": "response",
+                "response": "Elizabeth Glaser - Attendance Control\n\nYou already registered an attendance for today.\n\nEntry: ${entry_date}\nExit: ${exit_date}\n\nThank You!",
+                "next_menu_level": null,
+                "action": "TERMINATE_SESSION"
+            }
+        ],
+        "max_selections": 0
+    },
+    "9": {
+        "id": 9,
+        "menu_level": 9,
+        "text": "Elizabeth Glaser - Attendance Control\n\nWelcome, please define your new PIN\n\n",
+        "menu_options": [
+            {
+                "type": "level",
+                "response": null,
+                "next_menu_level": 10,
+                "action": "PROCESS_REGISTER_PIN_PHASE_1"
+            }
+        ],
+        "max_selections": 0
+    },
+    "10": {
+        "id": 10,
+        "menu_level": 10,
+        "text": "Elizabeth Glaser - Attendance Control\n\nRepeat again your new PIN\n\n",
+        "menu_options": [
+            {
+                "type": "level",
+                "response": null,
+                "next_menu_level": 11,
+                "action": "PROCESS_REGISTER_PIN_PHASE_2"
+            }
+        ],
+        "max_selections": 0
+    },
+    "11": {
+        "id": 11,
+        "menu_level": 11,
+        "text": "",
+        "menu_options": [
+            {
+                "type": "response",
+                "response": "Elizabeth Glaser - Attendance Control\n\nPIN defined successfully.\n\nPlease, keep it safe.\n\nThank You!",
+                "next_menu_level": null,
+                "action": "TERMINATE_SESSION"
+            }
+        ],
+        "max_selections": 0
+    },
+    "12": {
+        "id": 12,
+        "menu_level": 12,
+        "text": "",
+        "menu_options": [
+            {
+                "type": "response",
+                "response": "Elizabeth Glaser - Attendance Control\n\n1rst doesn't match 2nd PIN.\n\nPlease, try again.\n\nThank You!",
+                "next_menu_level": null,
+                "action": "TERMINATE_SESSION"
+            }
+        ],
+        "max_selections": 0
+    }
+}

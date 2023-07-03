@@ -1,0 +1,178 @@
+.sidemenu-header {
+  height: var(--lumo-size-xl);
+  box-shadow: var(--lumo-box-shadow-s);
+}
+.sidemenu-header h1 {
+  font-size: var(--lumo-font-size-l);
+  margin: 0;
+}
+.sidemenu-menu #logo {
+  box-sizing: border-box;
+  box-shadow: inset 0 -1px var(--lumo-contrast-10pct);
+  padding: var(--lumo-space-s) var(--lumo-space-m);
+}
+.sidemenu-menu #logo img {
+  height: calc(var(--lumo-size-l) * 1.5);
+}
+.sidemenu-menu #logo h1 {
+  font-size: var(--lumo-font-size-xl);
+  font-weight: 600;
+  margin: 0 var(--lumo-space-s);
+}
+
+.sidemenu-menu vaadin-tab {
+  font-size: var(--lumo-font-size-s);
+  height: var(--lumo-size-l);
+  font-weight: 600;
+  color: var(--lumo-body-text-color);
+}
+
+.sidemenu-menu vaadin-tab:hover {
+  background-color: var(--lumo-contrast-5pct);
+}
+
+.sidemenu-menu vaadin-tab[selected] {
+  background-color: #468d88;
+  color: black;
+}
+
+html {
+  --lumo-font-family: "Helvetica LT Std Light", sans-serif;
+}
+
+html, p {
+  font-family: "Helvetica LT Std Light", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica LT Std Cond", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+.main-layout {
+  padding: 20px;
+}
+
+html {
+  /* Example global custom CSS property definition */
+  --my-theme-color: #468d88;
+  --lumo-primary-color: #468d88 !important;
+  --lumo-primary-color-50pct: #468d88 !important;
+}
+
+body {
+  background-color: white;
+  overflow: hidden;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /*  border-bottom: 1px dotted black;*/
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #0d120e;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0px 5px 0 5px;
+  opacity: 1;
+  position: absolute;
+  z-index: 1;
+  font-size: 11px;
+
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext2 {
+
+  visibility: visible;
+  margin: -4px 0px 0px 3px;
+  font-weight: bolder;
+
+}
+
+.tooltip .tooltiptext2 {
+
+  visibility: hidden;
+  background-color: #0d120e;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0px 5px 0 5px;
+  opacity: 1;
+  position: absolute;
+  z-index: 1;
+  font-size: 11px;
+
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  margin: -4px 0 0 6px;
+  font-weight: bolder;
+
+}
+
+.copy-action, .edit-action {
+  width: 19px;
+  margin-right: 5px;
+  color: #888888;
+}
+
+.copy-action:hover, .edit-action:hover {
+  color: #448b88;
+  cursor: pointer;
+}
+
+.v-loading-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: auto;
+  z-index: 2147483647;
+}
+.v-loading-indicator:before {
+  width: 70px;
+  height: 70px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin: -38px 0 0 -38px;
+
+  border-radius: 100%;
+  animation: bouncedelay 1.2s infinite 0.4s ease-in-out both;
+  content: "";
+}
+
+.v-loading-indicator.first:before {
+  background-color: #f37320;
+}
+
+.v-loading-indicator.second:before {
+  background-color: salmon;
+}
+
+.v-loading-indicator.third:before {
+  background-color: #ff0909;
+}
+
+@keyframes bouncedelay {
+  0%, 80%, 100% {
+    transform: scale(0);
+  } 40% {
+      transform: scale(1.0);
+    }
+}
